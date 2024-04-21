@@ -1,150 +1,329 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Chetan's Portfolio</title>
-  <link rel="icon" href="Image/engineer.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</head>
-<body class="container-fluid body_section">
-        <header>
-              <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand brand-name" href="#">Chetan Kajjidoni</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="Education.html">Education</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="skill.html">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="Project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="contact.html">Contact Me</a>
-                    </li>
-                  </ul>
-              </nav>
-          </header>
-
-          <section id = "Home">
-              <div class="row column1">
-                <div class="col-lg-6 col-md-6 first-image">
-                    <img class = "boyimage" src="Image/20200630_162659.gif" alt="">
-                </div>  
-                  <div class="col-lg-6 section-1">
-                      <h1 class = "Hello">Hello All ! I'm Chetan <span class="wave">👋</span></h1>
-                      <p>As an achievement-oriented software developer with exceptional time management and communication skills, I am committed to delivering high-quality work. With experience in Angular, React, and Flutter, I have developed lightning-fast web pages and mobile applications</p>
-                          <div class=social_media_icon>
-                            <a class="btn" href="https://instagram.com/chetugk?igshid=YmMyMTA2M2Y=" target=_blank>
-                              <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn" href="https://www.linkedin.com/in/chetan-g-kajjidoni-443906253/" target=_blank>
-                              <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a class="btn" href="https://github.com/ChetanGk123" target=_blank>
-                              <i class="fab fa-github"></i>
-                            </a>
-                            <a class="btn" href="mailto:chetangkajjidoni+Portfolio@gmail.com" target=_blank>
-                              <i class="fab fa-google"></i>
-                            </a>
-                          </div>
-                  </div>
-                  <div class="Image-boy col-lg-6"><img class="boy" src="Image/Boy-image.png" alt=""></div>
-              </div>
-          </section>
-
-
-          <section id=Whatido>
-            <h1>What I Do ?</h1>
-              <!-- <div class = "row feature-1">
-                  <div class="col-lg-6 col-md-6 Feature-first-image ">
-                    <img class = "Feature-svg-image" src="Image/Data_Analysis.svg" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <h1 class= "Feature-Heading" >Data Analytics & ML</h1>
-                    <ul class = "dev-icon">
-                      <li><i class="fab fa-python fa-5x" style="color:#3776ab"></i></li>
-                      <li><img class="numpy" src="Image/numpy-ar21.svg" alt=""></li>
-                      <li><img class = "pandas" src="Image/kindpng_5747046.png" alt=""></li>
-                    </ul>
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                         💥 Developing Models that cleaning, tranforming and analyse Raw data to discover useful informations,
-                         in order to make conclusions about the informations.</p>
-                      <p  class ="Features-paragraph">
-                         💥 Experience of working with different python Libraries like Numpy,Pandas,Matplotlib,Seaborn etc and have knowlege of
-                        Data analyitical algorithm and techniques.</p>
-                    </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Chetan Kajjidoni</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Chetan Kajjidoni</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Chetan Kajjidoni profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Chetan Kajjidoni</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/16WospCNpBFp-lBJpKkJw2DvWbpZGNeGk/view?usp=sharing')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/chetan-kajjidoni-443906253/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ChetanGk123'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>M.Sc. Software Engineering <br />B.Eng. Information Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As an achievement-oriented software developer with exceptional time management and
+              communication skills, I am committed to delivering high-quality work. With experience
+              in Angular, and React. I have developed lightning-fast web applications.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Experienced</p>
                 </div>
-              </div> -->
-              <div class="row feature-2">
-                <div class="col-lg-6 col-md-6 feature-web">
-                  <h1 class="Feature-Heading">Web Development</h1>
-                  <ul class = "dev-icon">
-                    <li><i class="fab fa-html5 fa-5x" style="color:#e34f26"></i></li>
-                    <li><i class="fab fa-css3-alt fa-5x" style="color:#1572b6"></i></li>
-                    <li><i class="fab fa-bootstrap fa-5x" style="color:#543b79"></i></li>
-                    <li><i class="fab fa-js-square fa-5x" style="color:#f7df1e"></i></li>
-                    <li><i class="fab fa-angular fa-5x" style="color:#f24e1e"></i></li>
-                    <li><i class="fab fa-node fa-5x" style="color:#679e63"></i></li>
-                
-                  </ul>
-                  <div class = "Data-Analytic">
-                    <p class ="Features-paragraph">
-                       💥 Building Fully responsive website front end using Angular, HTML, CSS, Bootstrap and Javascript.</p>
-                    <p  class ="Features-paragraph">
-                       💥 As of now I have knowledge only of front end but in near future I will add more features to myself and excited to explore Angular , NodeJS and many more.</p>
-                      <p  class ="Features-paragraph">
-                       💥 I have also used Figma to design User interface of websites and mobile application and design of logos.</p>
-                      </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>NextJs</h3>
+                  <p>Intermediate</p>
                 </div>
-                <div class="col-lg-6 col-md-6 Feature-second-image ">
-                  <img class = "Feature-svg-image" src="Image/website.svg" alt="">
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermediate</p>
                 </div>
-              </div>
-              <!-- <div class="row feature-3">
-                <div class = "col-lg-6 col-md-6 Feature-third-image">
-                    <img class = "Feature-svg-image-3" src="Image/Coding.svg" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6 feature-coding">
-                    <h1 class="Feature-Heading">Data Structure and Algorithms</h1>
-                    <ul class = "dev-icon">
-                     <li></li>
-                     <li><i class="fas fa-laptop-code fa-4x"></i></li>
-                     
-                     <li><i class="fas fa-file-code fa-4x" style="color: #a8afcb;"></i></li>
-                    </ul>
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                         💥 I have knowledge of Data Structure like Hash Tables, Trees, Tries, Graphs, and various algorithms for solving various problems efficiently.</p>
-                      <p  class ="Features-paragraph">
-                         💥 As I know Data Structure and Algorithms are the heart of programming, So I loves to solve programming question in different competitive website like codeforce,codechef,hackerrank and many more.</p>
-                        </div>
-                  </div>
-              </div> -->
-               
-        
-          </section>
-    <footer class=footer>Made with ❤️ by Chetan Kajjidoni</footer>
-</body>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PrimeNG</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>ShadCN</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SpringBoot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JWT</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>GIT</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Jenkins</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>RESTful APIs</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/cms.jpeg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Canteen Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://demo-smartcanteen.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/sms.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">School Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://royalpalacelkp.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/lms.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Learning Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://lms-tutorial.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:chetangkajjidoni@gmail.com">chetangkajjidoni@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/chetan-kajjidoni-443906253/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Chetan Kajjidoni. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
