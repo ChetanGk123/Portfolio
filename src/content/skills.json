@@ -1,0 +1,17 @@
+[
+  {
+    "category": "Frontend",
+    "icon": "layout",
+    "skills": ["React", "Next.js", "Angular", "TypeScript", "JavaScript", "Tailwind CSS", "Material UI", "shadcn/ui", "PrimeNG", "HTML & CSS"]
+  },
+  {
+    "category": "Backend",
+    "icon": "server",
+    "skills": ["Node.js", "Express.js", "Java", "Spring Boot", "ASP.NET", "Prisma", "REST APIs", "JWT"]
+  },
+  {
+    "category": "Tools & Practices",
+    "icon": "wrench",
+    "skills": ["Git", "Docker", "Nx Monorepo", "TanStack Query", "Redux", "Jest", "Netlify", "AI-driven development", "Agile"]
+  }
+]

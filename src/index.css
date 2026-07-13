@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glow-violet: 139 124 255;
+  --glow-cyan: 34 211 238;
+}
+
+@layer base {
+  html {
+    @apply bg-base-900 text-ink antialiased;
+    color-scheme: dark;
+  }
+  body {
+    @apply font-sans text-[15px] leading-relaxed sm:text-base;
+  }
+  ::selection {
+    @apply bg-accent-violet/40 text-white;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-cyan/70 ring-offset-2 ring-offset-base-900 rounded-sm;
+  }
+}
+
+@layer components {
+  /* Gradient headline text */
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-violet via-accent-cyan to-accent-violet bg-clip-text text-transparent;
+    background-size: 200% auto;
+  }
+
+  /* Glass surface */
+  .surface {
+    @apply rounded-2xl border border-white/[0.07] bg-white/[0.03];
+  }
+
+  /* Card with mouse-follow spotlight (driven by --mx/--my set in JS) */
+  .spotlight-card {
+    @apply surface relative overflow-hidden transition-colors duration-300;
+  }
+  .spotlight-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: radial-gradient(
+      480px circle at var(--mx, 50%) var(--my, 50%),
+      rgb(var(--glow-violet) / 0.12),
+      transparent 60%
+    );
+    pointer-events: none;
+  }
+  .spotlight-card:hover::before {
+    opacity: 1;
+  }
+  .spotlight-card:hover {
+    @apply border-white/[0.14];
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-xs text-ink-muted transition-colors hover:border-accent-cyan/40 hover:text-ink;
+  }
+
+  .section-index {
+    @apply font-mono text-sm text-accent-cyan;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-accent-violet to-accent-cyan px-5 py-3 font-medium text-base-900 transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-3 font-medium text-ink transition-colors duration-200 hover:border-accent-cyan/50 hover:text-white active:scale-[0.98];
+  }
+}
+
+@layer utilities {
+  /* Dot-grid backdrop */
+  .bg-dots {
+    background-image: radial-gradient(rgb(255 255 255 / 0.06) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  /* Soft noise for depth */
+  .bg-noise::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+/* Scroll-reveal (JS adds .revealed; hidden state only when motion is OK) */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal.revealed {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

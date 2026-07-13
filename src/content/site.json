@@ -1,0 +1,19 @@
+{
+  "name": "Chetan Kajjidoni",
+  "role": "Frontend Developer",
+  "careerStart": "2021-03-01",
+  "tagline": "I build fast, scalable web applications with React & TypeScript.",
+  "bio": "Frontend developer with {years} years of experience specializing in React and the modern JavaScript ecosystem. I care about clean architecture, reusable components, and shipping interfaces that feel instant. Currently building financial-services frontends at Synechron, and always experimenting with new tech through side projects.",
+  "location": "Bengaluru, India",
+  "email": "chetangkajjidoni@gmail.com",
+  "github": "https://github.com/ChetanGk123",
+  "linkedin": "https://www.linkedin.com/in/chetan-kajjidoni",
+  "resumeFile": "/resume.pdf",
+  "available": true,
+  "stats": [
+    { "value": "{years}", "label": "Years of experience" },
+    { "value": "35%", "label": "App performance gained" },
+    { "value": "40%", "label": "Test coverage added" },
+    { "value": "3", "label": "Companies, one craft" }
+  ]
+}

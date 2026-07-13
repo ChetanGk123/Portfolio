@@ -1,0 +1,38 @@
+[
+  {
+    "company": "Synechron",
+    "role": "Sr. Associate — Technology",
+    "period": "Apr 2025 — Present",
+    "location": "Bengaluru, India",
+    "highlights": [
+      "Built and maintained scalable frontend apps in an Nx monorepo with React and TypeScript, driving a 35% improvement in application performance.",
+      "Implemented server-state management with TanStack Query, cutting redundant network calls by 30% and improving data load times by 25% in financial services.",
+      "Raised test coverage by 40% with Jest and AI-driven development workflows, accelerating feature delivery by 20%."
+    ],
+    "tech": ["React", "TypeScript", "Nx", "TanStack Query", "Jest"]
+  },
+  {
+    "company": "Insurite",
+    "role": "Software Developer",
+    "period": "Aug 2022 — Mar 2025",
+    "location": "Bengaluru, India",
+    "highlights": [
+      "Architected enterprise-grade React applications with TypeScript — memoization, lazy loading, dynamic imports and code splitting for faster loads.",
+      "Migrated legacy class-based React codebases to functional components with Hooks and TypeScript, reducing technical debt.",
+      "Optimized global state with Redux and Context API, streamlining async data flows and improving responsiveness."
+    ],
+    "tech": ["React", "TypeScript", "Redux", "Context API"]
+  },
+  {
+    "company": "Capgemini",
+    "role": "Software Developer (Analyst A-4)",
+    "period": "Mar 2021 — Jul 2022",
+    "location": "Bengaluru, India",
+    "highlights": [
+      "Led development of a code-generator project with Angular, ASP.NET and MySQL that cut team development time by 30%.",
+      "Delivered client projects on time and within budget, collaborating across cross-functional teams.",
+      "Developed and optimized Angular solutions for enterprise clients."
+    ],
+    "tech": ["Angular", "ASP.NET", "MySQL"]
+  }
+]
