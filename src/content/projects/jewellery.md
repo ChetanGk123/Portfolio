@@ -1,9 +1,9 @@
 ---
-title: MillMate
-description: Management platform for mill businesses — orders, customers, billing and inventory in one place.
-image: /projects/millmate.png
+title: Jewelers
+description: E-commerce for an Indian artificial/bridal jewellery store: a customer storefront and a full admin console in one place.
+image: /projects/jewellery.png
 tech: Next.js, TypeScript
-github: https://github.com/ChetanGk123/millmate
+github: https://github.com/ChetanGk123/jewellery
 featured: true
 order: 0
 ---
