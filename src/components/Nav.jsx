@@ -72,7 +72,11 @@ export default function Nav() {
             </li>
           ))}
           <li>
-            <a href={site.resumeFile} download className="btn-ghost ml-2 !px-4 !py-2 text-sm">
+            <a
+              href={site.resumeFile}
+              download={site.resumeFileName}
+              className="btn-ghost ml-2 !px-4 !py-2 text-sm"
+            >
               Resume
             </a>
           </li>
@@ -108,7 +112,7 @@ export default function Nav() {
             <li>
               <a
                 href={site.resumeFile}
-                download
+                download={site.resumeFileName}
                 onClick={() => setOpen(false)}
                 className="block rounded-lg px-3 py-3 text-accent-cyan"
               >
