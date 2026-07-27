@@ -29,7 +29,7 @@ export default function Contact() {
               <Mail size={18} aria-hidden="true" />
               Say hello
             </a>
-            <a href={site.resumeFile} download className="btn-ghost">
+            <a href={site.resumeFile} download={site.resumeFileName} className="btn-ghost">
               <Download size={18} aria-hidden="true" />
               Download resume
             </a>
