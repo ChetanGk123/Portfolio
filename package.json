@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "resume": "bash scripts/fetch_resume.sh"
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",

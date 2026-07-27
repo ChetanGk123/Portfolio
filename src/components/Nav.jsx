@@ -74,7 +74,8 @@ export default function Nav() {
           <li>
             <a
               href={site.resumeFile}
-              download={site.resumeFileName}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-ghost ml-2 !px-4 !py-2 text-sm"
             >
               Resume
@@ -112,7 +113,8 @@ export default function Nav() {
             <li>
               <a
                 href={site.resumeFile}
-                download={site.resumeFileName}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="block rounded-lg px-3 py-3 text-accent-cyan"
               >
